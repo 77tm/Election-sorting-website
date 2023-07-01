@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Toms Madžuls tm22005
+-->
+<html>
+    <head>
+        <title>Elections Activity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="activities.js"></script>
+        <script type="text/javascript" src="homework3.js"></script>
+        <style>
+            table, td, th { border: 1px solid gray; border-collapse: collapse;}
+            td:nth-child(5), td:nth-child(6), td:nth-child(7) {text-align: right;}
+        </style>
+    </head>
+    <body>
+        <h1>Elections Activity</h1>
+        <div>
+          <div>
+            <label for="region-list">Region:</label>
+            <select id="region-list">
+				<option value="">All</option>
+			</select>
+          </div>
+          <div>
+            <label for="polling-list">Polling station:</label>
+            <select id="polling-list">
+        <option value="">All</option>
+      </select>
+          </div>
+          <div>
+            <label for="vote-from">Voters from:</label>      
+            <input type="text" id="vote-from">
+          </div>    
+          <div>
+            <label for="vote-until">Voters until:</label>      
+            <input type="text" id="vote-until">
+          </div>        
+          <div>
+            <label for="search">Polling station search:</label>      
+            <input type="search" id="search">
+          </div>
+          <div>
+            <label for="total">Total</label>      
+            <input type="radio" id="total" name="indicator" value="total" checked>
+            <label for="elect-day">Voted on election day</label>      
+            <input type="radio" id="elect-day" name="indicator" value="elect-day">
+          </div>  
+          <div id="buttons">
+            <button id="show-stats">Show statistics</button>
+          </div>
+            <table>
+              <thead id="table-head"></thead>
+              <tbody id="table-body"></tbody>
+          </table>
+        </div>
+    </body>
+</html>
